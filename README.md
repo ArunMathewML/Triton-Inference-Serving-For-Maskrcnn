@@ -9,7 +9,7 @@ Mask R-CNN, or Mask RCNN, is a Convolutional Neural Network (CNN) and state-of-t
 
 **Converting mask_rcnn_coco.h5 weight file to tensorrt weight file format**  
 
-For converting the weight file I had changed some paraneters in the maskrcnn '**model.py**' and u can use '**tensorrtt.py**' for conversions. After converting the weight file along with the '**config.pbtxt**' file need to upload it in the server where u hosted triton serving.  
+For converting the weight file I had changed some parameters in the maskrcnn '**model.py**' and you can use '**tensorrtt.py**' for conversions. After converting the weight file along with the '**config.pbtxt**' file need to upload it in the server where u hosted triton serving.  
 
 **Inferencing**  
 
