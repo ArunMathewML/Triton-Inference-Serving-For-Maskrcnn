@@ -15,3 +15,11 @@ For converting the weight file I had changed some paraneters in the maskrcnn '**
 
 For inferencing u can use '**infrencing_triton_serving.py**' file.
 
+**Reference**
+
+-https://github.com/triton-inference-server/server  
+
+-https://github.com/NVIDIA/TensorRT/tree/master/samples/sampleUffMaskRCNN  
+
+-https://github.com/matterport/Mask_RCNN
+
