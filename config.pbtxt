@@ -1,0 +1,32 @@
+name: "crop-mrcnn"
+platform: "tensorflow_graphdef"
+max_batch_size: 8
+input [
+  {
+    name: "input_image"
+    data_type: TYPE_FP32
+    dims: [ 800, 800, 3 ]
+  },
+  {
+    name: "input_image_meta"
+    data_type: TYPE_FP32
+    dims: [ 14 ]
+  },
+  {
+    name: "input_anchors"
+    data_type: TYPE_FP32
+    dims: [ 159882, 4 ]
+  }
+]
+output [
+  {
+    name: "mrcnn_detection/Reshape_1"
+    data_type: TYPE_FP32
+    dims: [ 16 ]
+  },
+  {
+    name: "mrcnn_mask/Reshape_1"
+    data_type: TYPE_FP32
+    dims: [ 16 ]
+  }
+]
